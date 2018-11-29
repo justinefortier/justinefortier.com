@@ -1,2 +1,1 @@
-# justinefortier.com
-justinefortier personal site
+Repository for justinefortier.com
