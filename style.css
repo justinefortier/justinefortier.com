@@ -80,8 +80,12 @@ nav li {
 }
 
 nav li a {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.1em;
     color: white;
-    line-height: 2em;
+    line-height: 2.1em;
     text-decoration: none;
     padding: 5px 8px;
     background-size: 200% auto;
@@ -178,7 +182,7 @@ svg:hover {
     }
 
     nav ul li {
-        margin: 0 4.5em 0 0;
+        margin: 0 3.5em 0 0;
     }
 
     footer ul {
@@ -255,7 +259,6 @@ html {
 
 #filters li {
     display: inline-block;
-    /* float: left; */
 }
 
 #filters li span {
