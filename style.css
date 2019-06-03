@@ -379,8 +379,19 @@ form {
     text-align: center;
 }
 
+.content {
+    grid-template-areas:
+        "form";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.form {
+    grid-area: form;
+}
+
 .form-control {
-    width: 50%;
+    width: 27em;
     background: none;
     border: none;
     outline: none;
@@ -400,7 +411,6 @@ form .submit {
     border-color: none;
     border-bottom: 0;
     color: var(--lightColor);
-    /* font-size: 1em; */
     font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 400;
@@ -417,17 +427,4 @@ form .submit:hover {
     form {
         margin-top: 3em;
     }
-
-    .form-control {
-        width: 30%;
-    }
-
-}
-
-/* #Mobile (Landscape) - Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .form-control {
-        width: 60%;
-    }
-
 }
