@@ -5,40 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio | Justine Fortier</title>
+  <title>À propos | Justine Fortier</title>
   <link rel="stylesheet" href="style.css" type="text/css">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
-
-  <script type="text/javascript">
-    $(function () {
-
-      var filterList = {
-
-        init: function () {
-
-          // MixItUp plugin
-          // http://mixitup.io
-          $('#portfoliolist').mixItUp({
-            selectors: {
-              target: '.portfolio',
-              filter: '.filter'
-            },
-            load: {
-              filter: '.ill, .inst, .app'
-            }
-          });
-
-        }
-
-      };
-
-      // Run the show!
-      filterList.init();
-
-
-    });
-  </script>
 </head>
 
 <body>
@@ -53,50 +21,13 @@
     <div class="sidebar">
       <nav>
         <ul>
-          <li id="currentPage"><a href="./index.html">Portfolio</a></li>
-          <li><a href="./a_propos.html">À propos</a></li>
+          <li><a href="./index.html">Portfolio</a></li>
+          <li id="currentPage"><a href="./a_propos.html">À propos</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="content">
-      <div class="filters">
-        <ul id="filters" class="clearfix">
-          <li><span class="filter active" data-filter=".ill, .inst, .app">Toutes les catégories</span></li>
-          <li><span class="filter" data-filter=".ill">Illustrations</span></li>
-          <li><span class="filter" data-filter=".inst">Installations</span></li>
-          <li><span class="filter" data-filter=".app">Applications</span></li>
-        </ul>
-      </div>
-      <div id="portfoliolist">
-        <!-- <div class="portfolio ill" data-cat="ill">
-          <div class="portfolio-wrapper">
-            <img src="./resources/" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">Title</a>
-                <span class="text-category">Illustration</span>
-              </div>
-              <div class="label-bg"> </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio ill" data-cat="ill">
-          <div class="portfolio-wrapper">
-            <img src="./resources/" alt="" />
-            <div class="label">
-              <div class="label-text">
-                <a class="text-title">Title</a>
-                <span class="text-category">Illustration</span>
-              </div>
-              <div class="label-bg"> </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-    </div>
+    <div class="content"></div>
     <div class="footer">
       <footer>
         <ul>
@@ -135,6 +66,7 @@
       </footer>
     </div>
   </div>
+
 </body>
 
 </html>
