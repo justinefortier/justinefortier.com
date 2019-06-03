@@ -84,7 +84,7 @@ nav li a {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.1em;
-    color: white;
+    color: var(--lightColor);
     line-height: 2.1em;
     text-decoration: none;
     padding: 6px 8px;
@@ -97,7 +97,7 @@ nav li a {
 nav li a:hover {
     background-position: -100% 0;
     padding: 6px 8px;
-    color: white;
+    color: var(--lightColor);
 }
 
 #currentPage a {
@@ -215,7 +215,7 @@ svg:hover {
 
 }
 
-/* PORTFOLIO STRUTURE */
+/* PORTFOLIO */
 
 html {
     overflow-y: scroll;
@@ -328,7 +328,7 @@ html {
 
 .portfolio .text-category {
     display: block;
-    font-size: 11px;
+    font-size: 0.7em;
 }
 
 .portfolio:hover .label {
@@ -353,7 +353,6 @@ html {
 
 /*  #Mobile (Portrait) — Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-
     #portfoliolist .portfolio {
         width: 48%;
         margin: 1%;
@@ -367,9 +366,68 @@ html {
 
 /* #Mobile (Landscape) - Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
     #ads {
         display: none;
+    }
+
+}
+
+/* CONTACT FORM */
+
+form {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.form-control {
+    width: 50%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.1em solid var(--primaryColor);
+    color: var(--primaryColor);
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    margin-bottom: 3em;
+}
+
+input {
+    height: 3em;
+}
+
+form .submit {
+    background: var(--primaryColor);
+    border-color: none;
+    border-bottom: 0;
+    color: var(--lightColor);
+    /* font-size: 1em; */
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-top: 2em;
+}
+
+form .submit:hover {
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+@media (min-width: 1076px) {
+    form {
+        margin-top: 3em;
+    }
+
+    .form-control {
+        width: 30%;
+    }
+
+}
+
+/* #Mobile (Landscape) - Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .form-control {
+        width: 60%;
     }
 
 }
