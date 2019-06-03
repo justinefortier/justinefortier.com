@@ -51,7 +51,8 @@ body {
     background: var(--primaryColor);
 }
 
-.content {
+.content,
+.contact-content {
     background: var(--lightColor);
 }
 
@@ -379,7 +380,7 @@ form {
     text-align: center;
 }
 
-.content {
+.contact-content {
     grid-template-areas:
         "form";
     grid-template-columns: 1fr;
