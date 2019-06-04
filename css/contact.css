@@ -52,3 +52,18 @@ form .submit:hover {
         margin-top: 3em;
     }
 }
+
+@media only screen and (min-width: 432px) and (max-width: 962px) {}
+
+@media only screen and (max-width: 432px) {
+    .form-control {
+        width: 19em;
+    }
+
+}
+
+@media only screen and (max-width: 306px) {
+    .form-control {
+        width: 10em;
+    }
+}

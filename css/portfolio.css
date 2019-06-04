@@ -18,7 +18,6 @@ html {
 
 .filters {
     grid-area: filters;
-    margin: 1em 0;
 }
 
 #portfoliolist {
@@ -27,11 +26,11 @@ html {
 }
 
 #filters {
-    margin: 0 0 0 1.7em;
-    padding: 0;
-    display: inline-block;
+    /* display: inline-block; */
     list-style: none;
     text-align: center;
+    padding: 0;
+    margin: 1em 0 2em 0;
 }
 
 #filters li span:hover {
@@ -60,8 +59,8 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
-    width: 23%;
-    margin: 1%;
+    width: 30%;
+    margin: 0.9em;
     display: none;
     float: left;
     overflow: hidden;
@@ -121,21 +120,43 @@ html {
 }
 
 @media (min-width: 1076px) {
+    #portfoliolist .portfolio {
+        width: 23%;
+        margin: 0.6em;
+    }
+
     #portfoliolist {
         margin: 0 2.4em;
     }
 
+    .filters {
+        margin: 1em 0;
+    }
+
     #filters {
+        display: inline-block;
         margin: 0 0 0 2.2em;
         padding: 0;
         list-style: none;
     }
 }
 
-/*  #Mobile (Portrait) — Design for a width of 320px */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 432px) and (max-width: 962px) {
     #portfoliolist .portfolio {
-        width: 48%;
+        width: 46%;
+        margin: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 432px) {
+    #portfoliolist .portfolio {
+        width: 100%;
+        margin: 0 0 0.9em 0;
+    }
+
+    #portfoliolist {
+        margin: 4em 0;
     }
 
     #ads {
@@ -144,10 +165,9 @@ html {
 
 }
 
-/* #Mobile (Landscape) - Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    #ads {
-        display: none;
+@media only screen and (max-width: 306px) {
+    #portfoliolist {
+        margin: 7em 0;
     }
 
 }

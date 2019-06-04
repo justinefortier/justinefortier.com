@@ -47,25 +47,39 @@ button:hover {
     }
 }
 
-/*  #Mobile (Portrait) — Design for a width of 320px */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 432px) and (max-width: 962px) {
     p {
         text-align: center;
     }
 
     .presentation {
-        margin: 4em;
+        margin: 7em;
+    }
+
+    button {
+        width: 22em;
     }
 
 }
 
-/* #Mobile (Landscape) - Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 432px) {
     p {
         text-align: center;
     }
 
     .presentation {
-        margin: 4em;
+        margin: 1em;
+        ;
+    }
+
+    button {
+        width: 18em;
+    }
+
+}
+
+@media only screen and (max-width: 306px) {
+    button {
+        width: 11em;
     }
 }
