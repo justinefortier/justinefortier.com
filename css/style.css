@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,800&display=swap');
 
 :root {
-    --primaryColor: #0D3040;
-    --secondaryColor: #DFAF6A;
-    --complementaryColor: #F8615E;
+    --primaryColor: #103254;
+    /* --complementaryColor: #F8615E; */
+    --complementaryColor: #DFAF6A;
     --lightColor: #F2F2F2;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .footer {
-    background: var(--secondaryColor);
+    background: var(--primaryColor);
 }
 
 .header {
@@ -143,7 +143,7 @@ svg {
     width: 3em;
     stroke: var(--lightColor);
     stroke-width: 1em;
-    fill: var(--secondaryColor);
+    fill: var(--primaryColor);
 }
 
 svg:hover {

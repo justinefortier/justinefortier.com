@@ -43,7 +43,7 @@ form .submit {
 }
 
 form .submit:hover {
-    background-color: var(--secondaryColor);
+    background-color: var(--complementaryColor);
     cursor: pointer;
 }
 
