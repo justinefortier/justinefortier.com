@@ -53,7 +53,7 @@ form .submit:hover {
     }
 }
 
-@media only screen and (min-width: 432px) and (max-width: 962px) {}
+/* @media only screen and (min-width: 432px) and (max-width: 962px) {} */
 
 @media only screen and (max-width: 432px) {
     .form-control {
