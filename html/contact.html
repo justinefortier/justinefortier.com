@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>À propos | Justine Fortier</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Contact | Justine Fortier</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <link rel="stylesheet" href="../css/contact.css" type="text/css">
 </head>
 
 <body>
@@ -14,20 +15,29 @@
     <div class="header">
       <header>
         <div class="logo">
-          <img id="logo" src="./resources/logo-justine_fortier.png" alt="Logo Justine Fortier">
+          <img id="logo" src="../resources/logo-justine_fortier.png" alt="Logo Justine Fortier">
         </div>
       </header>
     </div>
     <div class="sidebar">
       <nav>
         <ul>
-          <li><a href="./index.html">Portfolio</a></li>
-          <li id="currentPage"><a href="./a_propos.html">À propos</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="../index.html">Portfolio</a></li>
+          <li><a href="./a_propos.html">À propos</a></li>
+          <li id="currentPage"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <div class="form">
+        <form method="post" action="contact-form.php">
+          <input name="name" type="text" class="form-control" placeholder="Nom" required><br>
+          <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+          <textarea name="message" class="form-control" placeholder="Message" rows="6" required></textarea><br>
+          <input type="submit" class="form-control submit" value="Envoyer">
+        </form>
+      </div>
+    </div>
     <div class="footer">
       <footer>
         <ul>
