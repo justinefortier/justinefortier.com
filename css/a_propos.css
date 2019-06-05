@@ -6,12 +6,12 @@ p {
 }
 
 .presentation {
-    margin: 5% auto auto 47%;
+    margin: 5% auto 2em 47%;
     ;
 }
 
 #buttons {
-    margin: 2em 0 0 0;
+    margin: 2em 0;
 }
 
 button {
@@ -42,7 +42,15 @@ button:hover {
     }
 
     .presentation {
-        margin: 5% 10% auto 40%;
+        margin: 5% 8% 2em 40%;
+    }
+
+    button {
+        width: 17em;
+    }
+
+    #cv {
+        margin: 0 0.5em 0 0;
     }
 }
 
@@ -54,11 +62,12 @@ button:hover {
     }
 
     .presentation {
-        margin: 5% 13% auto 13%;
+        margin: 5% 13% 2em 13%;
     }
 
     button {
-        width: 22em;
+        width: 20em;
+        margin: 1em 0.3em 0 0.3em;
     }
 
 }
@@ -69,7 +78,7 @@ button:hover {
     }
 
     .presentation {
-        margin: 5%;
+        margin: 1.4em 5% 2em 5%;
         ;
     }
 
