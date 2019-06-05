@@ -152,7 +152,9 @@ svg:hover {
     transition: all 500ms ease-out;
 }
 
-@media (min-width: 1076px) {
+@media (min-width: 916px) {
+
+    /* @media (min-width: 1076px) { */
     .container {
         display: grid;
         grid-template-areas:

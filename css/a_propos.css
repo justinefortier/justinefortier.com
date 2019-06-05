@@ -6,30 +6,27 @@ p {
 }
 
 .presentation {
-    margin: 4em 4em 4em 50%;
+    margin: 5% auto auto 47%;
     ;
 }
 
 button {
-    width: 27em;
+    width: 16em;
+    height: 3em;
     background: none;
     border: none;
-    outline: none;
-    border-bottom: 0.1em solid var(--primaryColor);
-    color: var(--primaryColor);
     font-family: 'Montserrat';
     font-size: 0.9em;
-    margin-bottom: 3em;
-    height: 3em;
     background: var(--primaryColor);
-    border-color: none;
-    border-bottom: 0;
     color: var(--lightColor);
-    font-family: 'Montserrat';
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.1em;
-    margin-top: 2em;
+    margin: 2em 0;
+}
+
+#cv {
+    margin: 2em 0.5em 0 0;
 }
 
 button:hover {
@@ -37,23 +34,27 @@ button:hover {
     cursor: pointer;
 }
 
-@media (min-width: 1076px) {
+@media (min-width: 916px) {
+
+    /* @media (min-width: 1076px) { */
     p {
         text-align: left;
     }
 
     .presentation {
-        margin: 4em 12% 3em 55%;
+        margin: 5% 10% auto 40%;
     }
 }
 
-@media only screen and (min-width: 432px) and (max-width: 962px) {
+@media only screen and (min-width: 432px) and (max-width: 916px) {
+
+    /* @media only screen and (min-width: 432px) and (max-width: 962px) { */
     p {
         text-align: center;
     }
 
     .presentation {
-        margin: 7em;
+        margin: 5% 13% auto 13%;
     }
 
     button {
@@ -68,7 +69,7 @@ button:hover {
     }
 
     .presentation {
-        margin: 1em;
+        margin: 5%;
         ;
     }
 
