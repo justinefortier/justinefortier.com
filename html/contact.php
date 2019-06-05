@@ -1,3 +1,47 @@
+<?php
+$to = "";
+$colorError = "#F00";
+function lastPost($in)
+{
+  if(isset($_POST[$in]))
+    return htmlspecialchars($_POST[$in]);
+  else
+    return "";
+}
+
+if(isset($_POST['name'], $_POST['email'], $_POST['message']) and !empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message']))
+{
+	$name = htmlspecialchars($_POST['name']);
+	$email = htmlspecialchars($_POST['email']);
+	$message = htmlspecialchars($_POST['message']);
+	if(strlen($name) > 0)
+	{
+		if(preg_match("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$", $email))
+		{
+			if(strlen($message) < 2048)
+			{
+				mail($to, "Formulaire de contact - Portfolio", "Nom : " .$name. ";<br>Email : " .$email. ";<br>Message : " .$message. ";<br>Formulaire posté à : " .date(). ";");
+			}
+			else
+			{
+				$error = "Le message est trop long";
+			}
+		}
+		else
+		{
+			$error = "L'email n'est pas valide";
+		}
+	}
+	else
+	{
+		$error = "Veuillez remplir tous les champs";
+	}
+}
+else
+{
+	$error = "Veuillez remplir tous les champs";
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,12 +57,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115882733-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'UA-115882733-1');
   </script>
 </head>
@@ -44,9 +86,15 @@
     <div class="content">
       <div class="form">
         <form method="post" action="../php/contact-form.php">
-          <input name="name" type="text" class="form-control" placeholder="Nom" required><br>
-          <input name="email" type="email" class="form-control" placeholder="Email" required><br>
-          <textarea name="message" class="form-control" placeholder="Message" rows="6" required></textarea><br>
+          <input value="<?= lastPost("name") ?>" name="name" type="text" class="form-control" placeholder="Nom" required><br>
+          <input value="<?= lastPost("email") ?>" name="email" type="email" class="form-control" placeholder="Email" required><br>
+          <textarea name="message" class="form-control" placeholder="Message" rows="6" required><?= lastPost("message") ?></textarea><br>
+          <?php
+          if(isset($error))
+          {
+          	echo "<span style='color:" .$colorError. "'>" .$error. "";
+          }
+          ?>
           <input type="submit" class="form-control submit" value="Envoyer">
         </form>
       </div>
