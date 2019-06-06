@@ -22,11 +22,11 @@ html {
 
 #portfoliolist {
     grid-area: portfoliolist;
-    margin: 2em 2.1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 #filters {
-    /* display: inline-block; */
     list-style: none;
     text-align: center;
     padding: 0;
@@ -119,16 +119,27 @@ html {
     top: -30px;
 }
 
+@media (min-width: 1068px) {
+
+    #portfoliolist .portfolio {
+        width: 23%;
+    }
+
+    #portfoliolist {
+        margin-right: 2.4em;
+    }
+}
+
 @media (min-width: 916px) {
 
     /* @media (min-width: 1076px) { */
     #portfoliolist .portfolio {
-        width: 23%;
         margin: 0.6em;
     }
 
     #portfoliolist {
-        margin: 0 2.4em;
+        margin-top: 0;
+        margin-left: 2.4em;
     }
 
     .filters {
@@ -160,7 +171,9 @@ html {
     }
 
     #portfoliolist {
-        margin: 4em 0;
+        margin-top: 4em;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #ads {
@@ -171,7 +184,7 @@ html {
 
 @media only screen and (max-width: 306px) {
     #portfoliolist {
-        margin: 7em 0;
+        margin-top: 7em;
     }
 
 }

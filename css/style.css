@@ -27,7 +27,7 @@ body {
     grid-template-rows: 80px 80px 1fr 130px;
 }
 
-.header {
+header {
     grid-area: header;
     text-align: center;
 }
@@ -44,7 +44,10 @@ body {
     grid-area: footer;
 }
 
-.header,
+.header {
+    background: var(--primaryColor);
+}
+
 .sidebar {
     background: var(--primaryColor);
 }
@@ -57,7 +60,7 @@ body {
     background: var(--primaryColor);
 }
 
-.header {
+header {
     padding: 1em 1em 0 1em;
 }
 
@@ -65,6 +68,10 @@ body {
 .content,
 .footer {
     padding: 1em;
+}
+
+nav {
+    padding: 0;
 }
 
 nav ul {
@@ -169,6 +176,9 @@ svg:hover {
         background: var(--primaryColor);
     }
 
+    nav {
+        padding: 0 0 0 0.3em;
+    }
 
     nav ul {
         justify-content: start;
@@ -212,6 +222,10 @@ svg:hover {
 }
 
 @media only screen and (max-width: 306px) {
+    nav {
+        padding: 0;
+    }
+
     .logo img {
         width: 10em;
         padding: 0;
