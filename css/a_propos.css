@@ -12,11 +12,11 @@ p {
 }
 
 #buttons {
-    margin: 2em 0;
+    margin: 2.5em 0;
 }
 
 button {
-    width: 16em;
+    width: 17em;
     height: 3em;
     background: none;
     border: none;
@@ -35,7 +35,7 @@ button:hover {
     cursor: pointer;
 }
 
-@media (min-width: 916px) {
+@media (min-width: 921px) {
 
     /* @media (min-width: 1076px) { */
     p {
@@ -47,15 +47,13 @@ button:hover {
     }
 
     button {
+        display: inline-block;
         width: 17em;
-    }
-
-    #firstButton {
-        margin: 0 0.5em 0 0;
+        margin: 0.5em 0.5em 0.5em 0;
     }
 }
 
-@media only screen and (min-width: 432px) and (max-width: 916px) {
+@media only screen and (min-width: 432px) and (max-width: 921px) {
 
     /* @media only screen and (min-width: 432px) and (max-width: 962px) { */
     p {
@@ -67,8 +65,9 @@ button:hover {
     }
 
     button {
-        width: 20em;
-        margin: 1em 0.3em 0 0.3em;
+        display: inline-block;
+        width: 17em;
+        margin: 0.5em 0.5em 0.5em 0;
     }
 
 }
@@ -83,14 +82,14 @@ button:hover {
         ;
     }
 
-    button {
+    /* button {
         width: 18em;
-    }
+    } */
 
 }
 
-@media only screen and (max-width: 306px) {
+/* @media only screen and (max-width: 306px) {
     button {
         width: 11em;
     }
-}
+} */
