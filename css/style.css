@@ -21,15 +21,39 @@ body {
     grid-template-areas:
         "header"
         "sidebar"
+        "directliveinformation"
         "content"
         "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 80px 1fr 130px;
+    grid-template-rows: 80px 80px auto 1fr 130px;
 }
 
 header {
     grid-area: header;
     text-align: center;
+}
+
+.directliveinformation {
+    grid-area: directliveinformation;
+    /* background-color: var(--complementaryColor); */
+    background-color: rgb(233, 114, 107);
+    text-align: center;
+    padding: 10px;
+}
+
+.directliveinformation p {
+    color: var(--lightColor);
+    line-height: 25px;
+}
+
+.directliveinformation em {
+    font-size: 1.4em;
+    font-style: normal;
+}
+
+.directliveinformation a {
+    color: var(--primaryColor);
+    text-decoration: none;
 }
 
 .sidebar {
@@ -166,9 +190,10 @@ svg:hover {
         display: grid;
         grid-template-areas:
             "header sidebar footer"
+            "directliveinformation directliveinformation directliveinformation"
             "content content content";
         grid-template-columns: 350px 1fr 220px;
-        grid-template-rows: 150px 1fr;
+        grid-template-rows: 150px auto 1fr;
 
     }
 
